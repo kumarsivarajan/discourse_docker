@@ -1,5 +1,5 @@
 variable "ami" {
-  default = "ami-702be01d"
+  default = "ami-4e27ec23"
 }
 
 variable "aws_access_key" {}
