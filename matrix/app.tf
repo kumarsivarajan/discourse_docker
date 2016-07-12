@@ -91,7 +91,7 @@ resource "aws_autoscaling_group" "asg_app" {
   # wait_for_elb_capacity = 1
   desired_capacity = 1
   health_check_grace_period = 300
-  health_check_type = "ELB"
+  # health_check_type = "ELB"
   launch_configuration = "${aws_launch_configuration.lc_app.name}"
   load_balancers = ["${aws_elb.elb_web.id}"]
   vpc_zone_identifier = ["subnet-12e98a77", "subnet-d24ca5a5"]
