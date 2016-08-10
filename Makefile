@@ -1,5 +1,5 @@
 
-.PHONY: plan deploy 
+.PHONY: plan deploy
 
 
 plan:
@@ -8,4 +8,4 @@ apply:
 	terraform apply -var-file=matrix/credentials.json matrix
 
 destroy:
-	terraform destroy -var-file=matrix/credentials.json -var-file=matrix/artifacts/packer_ami.json matrix
+	terraform destroy -var-file=matrix/credentials.json matrix
